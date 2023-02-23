@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MusicWiki</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_album">Fragment_Album</string>
+    <string name="fragment_artist">Fragment_Artist</string>
+    <string name="fragment_track">Fragment_Track</string>
+    <string name="album_navigation">Album_Navigation</string>
+    <string name="artist_navigation">artist_navigation</string>
+    <string name="rock">Rock</string>
+</resources>

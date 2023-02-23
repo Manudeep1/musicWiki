@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.MainActivity">
+
+    <TextView
+        android:id="@+id/headingTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="musicwiki"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/headingTV"
+        android:text="Welcome!"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteY="113dp" />
+
+    <TextView
+        android:id="@+id/selectGenreTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Choose a genre to start with"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTV"
+        />
+
+    <ImageView
+        android:id="@+id/expand_IV"
+        android:layout_width="16dp"
+        android:layout_height="19dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/selectGenreTv"
+        app:layout_constraintStart_toEndOf="@+id/selectGenreTv"
+        app:srcCompat="@drawable/baseline_keyboard_arrow_down_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/selectGenreTv"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="20dp">
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:rowCount="3"
+            android:columnCount="3">
+
+            <Button
+                android:id="@+id/genrebtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:layout_margin="10dp"
+                android:text="@string/rock" />
+            <Button
+                android:id="@+id/genrebtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:text="@string/rock"
+                android:layout_margin="10dp" />
+            <Button
+                android:id="@+id/genrebtn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:layout_margin="10dp"
+                android:text="@string/rock"
+                />
+            <Button
+                android:id="@+id/genrebtn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:text="@string/rock" />
+            <Button
+                android:id="@+id/genrebtn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:text="@string/rock"
+                android:layout_margin="10dp"
+                />
+            <Button
+                android:id="@+id/genrebtn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:layout_margin="10dp"
+                android:text="@string/rock"
+                />
+            <Button
+                android:id="@+id/genrebtn7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:text="@string/rock" />
+            <Button
+                android:id="@+id/genrebtn8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:text="@string/rock"
+                android:layout_margin="10dp"
+                />
+            <Button
+                android:id="@+id/genrebtn9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:layout_margin="10dp"
+                android:text="@string/rock"
+                />
+            <Button
+                android:id="@+id/genrebtn10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:layout_margin="10dp"
+                android:text="@string/rock" />
+            <Button
+                android:id="@+id/genrebtn11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:text="@string/rock"
+                android:layout_margin="10dp" />
+            <Button
+                android:id="@+id/genrebtn12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:layout_margin="10dp"
+                android:text="@string/rock"
+                />
+
+        </GridLayout>
+        <GridLayout
+            android:id="@+id/gridLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:rowCount="3"
+            android:visibility="invisible"
+            android:columnCount="3">
+
+            <Button
+                android:id="@+id/genrebtn13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:layout_margin="10dp"
+                android:text="@string/rock" />
+            <Button
+                android:id="@+id/genrebtn14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:text="@string/rock"
+                android:layout_margin="10dp" />
+            <Button
+                android:id="@+id/genrebtn15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:layout_margin="10dp"
+                android:text="@string/rock"
+                />
+            <Button
+                android:id="@+id/genrebtn16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:text="@string/rock" />
+            <Button
+                android:id="@+id/genrebtn17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:text="@string/rock"
+                android:layout_margin="10dp"
+                />
+            <Button
+                android:id="@+id/genrebtn18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:layout_margin="10dp"
+                android:text="@string/rock"
+                />
+            <Button
+                android:id="@+id/genrebtn19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:text="@string/rock" />
+            <Button
+                android:id="@+id/genrebtn20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:text="@string/rock"
+                android:layout_margin="10dp"
+                />
+            <Button
+                android:id="@+id/genrebtn21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:layout_margin="10dp"
+                android:text="@string/rock"
+                />
+            <Button
+                android:id="@+id/genrebtn22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:layout_margin="10dp"
+                android:text="@string/rock" />
+            <Button
+                android:id="@+id/genrebtn23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:text="@string/rock"
+                android:layout_margin="10dp" />
+            <Button
+                android:id="@+id/genrebtn24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_activity_genre_custom_btn"
+                android:backgroundTint="#FFFF"
+                android:layout_margin="10dp"
+                android:text="@string/rock"
+                />
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
