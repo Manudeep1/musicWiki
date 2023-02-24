@@ -6,8 +6,12 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.musicwiki.API_Services.ApiService
+import com.example.musicwiki.RecyclerView.TopAlbumsAdapter
+import com.example.musicwiki.RecyclerView.TopTracksAdapter
 import com.example.musicwiki.Repository.Repository
 import com.example.musicwiki.ViewModels.MainViewModel
 import com.example.musicwiki.ViewModels.ViewModelFactory
@@ -22,7 +26,8 @@ class Artist_Details_Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityArtistDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        binding.rvTopTracks.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        binding.rvTopAlbum.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         val b = this.intent.extras
         val pos = b!!.getInt("Artist")
 
@@ -45,6 +50,12 @@ class Artist_Details_Activity : AppCompatActivity() {
             binding.DescriptionTV.text = it.artist.bio.summary
             Glide.with(this).load(it.artist.image[3].text).into(binding.ivArtist)
         })
+
+        viewModel.album.observe(this, Observer {
+            binding.rvTopTracks.adapter = TopTracksAdapter(this@Artist_Details_Activity,it)
+            binding.rvTopAlbum.adapter = TopAlbumsAdapter(this@Artist_Details_Activity,it)
+        })
+        viewModel.getAlbum()
         viewModel.getArtist()
     }
 }

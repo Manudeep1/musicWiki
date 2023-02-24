@@ -11,6 +11,7 @@ import retrofit2.http.GET
 
 interface ApiService {
     //Establishing HTTP request f
+
     @GET("?method=album.getinfo&api_key=bee24238318f832e853f8836b61a7a2c&artist=Cher&album=Believe&format=json")
      fun getAlbum() : Call<Album>
 
